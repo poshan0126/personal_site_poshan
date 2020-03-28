@@ -1,150 +1,625 @@
-
-
-<!DOCTYPE html>
-<html >
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
-  <meta name="description" content="Hi, I'm Poshan Pandey. I believe doing everything that makes me more human.">
-  <title>Poshan Pandey</title>
-  <style type="text/css">
-      .card {
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-              padding-top: 1%;
-              padding-right: 5%;
-              padding-bottom: 3%;
-              padding-left: 5%;
-              text-align: center;
-              background-color: #d4e7ff;
-              margin-right: 4%;
-              margin-left: 4%;
-              margin-top: 2%;
-              margin-bottom: 2%;
+        <title>Poshan Pandey</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Hi! I am Poshan Pandey and I believe in doing everything that makes me more human. I am a designer, developer and programmer." />
+        <meta name="keywords" content="Poshan Pandey: I believe in doing everything that makes me more human." />
+        <meta name="developer" content="Poshan Pandey">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- FAV AND ICONS   -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/apple-icon.png">
+        <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        
+        <!-- Google Font-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/animate.css">
+        <!-- Owl Carousel CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/owl.css">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- Colors -->
+        <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue">
+        <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
+    </head>
+    <body class="white-vertion black-bg">
+        <!-- Start Loader -->
+        <div class="section-loader">
+            <div class="loader">
+                <div></div>
+                <div></div> 
+            </div>
+        </div>
+        <!-- End Loader -->
+        
+        <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-experience">Experiences</a>
+                                </li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.thejay.tech/">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <!--
+        ===================
+            HOME 
+        ===================
+        -->
+        <section class="mh-home" id="mh-home">
+            <div class="home-ovimg">
+                <div class="container">
+                    <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                <div class="mh-promo wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                    <span>Hello I'm</span>
+                                </div>
+                                
+                                <h4 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">Poshan Pandey</h4>
+                                <h6 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">Mobile Application Developer</h6>
+                                
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s"><i class="fa fa-envelope"></i><a href="mailto:">hello@poshan.com.np</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s"><i class="fa fa-phone"></i><a href="callto:">+977 9860003427</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s"><i class="fa fa-map-marker"></i><address>Mahalaxmi, Lalitpur</address></li>
+                                </ul>
+                                
+                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                                    <li><a href="https://github.com/poshan0126"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/poshan-pandey-92553a143/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://gitlab.com/poshan0126"><i class="fa fa-gitlab"></i></a></li>
+                                    <li><a href="https://www.facebook.com/jay.poshan"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/POSHAN0126"><i class="fa fa-twitter"></i></a></li>
+                                    
+                                    <li><a href="https://www.instagram.com/poshan_pandey/"><i class="fa fa-instagram"></i></a></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-img wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                                <div class="img-border">
+                                    <img src="assets/images/a6.jpg" alt=""  class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <!--
+        ==================
+            ABOUT
+        =================
+        -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                            <img src="assets/images/ab-img.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">Hello, I’m Software Engineering student at Nepal College of Information Technology.I believe in doing everything that makes me more human. I am a Mobile Application developer based on Nepal. 
+                            I have rich experience in Mobile application development, designing and customization. Also I am good at</p>
+                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                                <ul>
+                                    <li><span>Flutter</span></li>
+                                    <li><span>Python</span></li>
+                                    <li><span>Django</span></li>
+                                    <li><span>Java</span></li>
+                                    <li><span>Node JS</span></li>
+                                    <li><span>Mongo DB</span></li>
+                                    <li><span>Git</span></li>
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS</span></li>
+                                    <li><span>Bootstrap</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           SERVICE
+        ===================
+        -->
+        <section class="mh-service">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                        <h2>What I do</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                            <i class="fa fa-bullseye purple-color"></i>
+                            <h3>Artificial Intelligence</h3>
+                            <p>I am able to provide solutions for various problem using Artificial Intelligence. Among different domains of AI, I am fond of OCR and Sentiment Analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                            <i class="fa fa-object-ungroup sky-color"></i>
+                            <h3>Mobile App Development</h3>
+                            <p>I can develop mobile application using Flutter as well as java. Also I am able to develop backend using firebase, firestore,  nodeJs and also MongoDb.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
+                            <i class="fa fa-code iron-color"></i>
+                            <h3>Web App Development</h3>
+                            <p>I can develop websites using django framework and am proefficient in HTML & CSS. As well as I can develop a backend for web app using NodeJS and Mongo DB.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>       
+        
+        <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+        <section class="mh-skills" id="mh-skills">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title text-center col-sm-12">
+                        <!--<h2>Skills</h2>-->
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                                <h3>Technical Skills</h3>
+                                <div class="each-skills">
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Flutter</div>
+                                                <div class="percentagem-num">85%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Python</div>
+                                                <div class="percentagem-num">70%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Java</div>
+                                                <div class="percentagem-num">50%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Node JS</div>
+                                                <div class="percentagem-num">40%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 40%;"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Mongo DB</div>
+                                                <div class="percentagem-num">50%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">HTML & CSS</div>
+                                                <div class="percentagem-num">89%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 89%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
+                            <h3>Professional Skills</h3>
+                            <ul class="mh-professional-progress" >
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                    <div class="pr-skill-name">Communication</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div> 
+                                    <div class="pr-skill-name">Team Work</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div>
+                                    <div class="pr-skill-name">Project Management</div>
+                                </li> 
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                    <div class="pr-skill-name">Creativity</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+        <section class="mh-experince" id="mh-experience">
+            <div class="bolor-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-education">
+                                 <h3 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">Education</h3>
+                                <div class="mh-education-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                                        <h4>Software Engineering From <a href="https://ncit.edu.np/">Nepal College of Information Technology</a></h4>
+                                        <div class="mh-eduyear">2016-2020</div>
+                                        <p>I am studying Bachelor of Software Engineering at Nepal College of Information Technology. I am securing 3.6 GPA in average till now. </p>
+                                         <h6>Elective I :</h6>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Data Mining and Warehousing</li>
+                                            
+                                        </ul>
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
+                                        <h4>Intermediate From <a href="https://nist.edu.np/">National School of Sciences</a></h4>
+                                        <div class="mh-eduyear">2014-2016</div>
+                                        <p>I completed my intermediate level study from National School of Sciences choosing sciences as major. I secured 72.40% in agregate in my intermediate level. </p>
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                                        <h4>School Leaving Certificate(SLC) From <a href="https://www.facebook.com/Pragyaschool2046/">Pragya Higher Secondary Boarding School</a></h4>
+                                        <div class="mh-eduyear">2011-2014</div>
+                                        <p>I gave my SLC examination from Pragya HSEBS and secured 79.63 %. </p>
+                                    </div>
+                                    <div class="mh-work">
+                                 <h3>Concepts</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                       
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Artificial Intelligence</li>
+                                            <li><i class="fa fa-circle"></i>Software Development Life Cycle</li>
+                                            <li><i class="fa fa-circle"></i>Design Patterns</li>
+                                            <li><i class="fa fa-circle"></i>Software Architecture</li>
+                                            <li><i class="fa fa-circle"></i>Database Management System</li>
+                                            <li><i class="fa fa-circle"></i>Software Quality Assurance</li>
+                                            <li><i class="fa fa-circle"></i>Real Time System</li>
+                                            <li><i class="fa fa-circle"></i>Operating System</li>
+                                            
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="mh-work">
+                                 <h3>Projects</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                        <span>Academic Projects :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Chess Multiplayer using UNITY(2 Credit)</li>
+                                            <li><i class="fa fa-circle"></i>Sentimeter: Android Application for tweets sentiment analysis(3 Credit)</li>
+                                        </ul>
+                                        <span>Non-Academic Projects :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Tic Tac Toe Multiplayer android application.</li>
+                                             <li><i class="fa fa-circle"></i>My shopApp mobile application.</li>
+                                             <li><i class="fa fa-circle"></i>Real Estate Nepal (Django Web App)</li>
+                                             <li><i class="fa fa-circle"></i>Election Portal (Django Web App)</li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-work">
+                                 <h3>Work Experience</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                        <h4>Mobile Application Developer at <a href="#">Techno Dawn PVT LTD.</a></h4>
+                                        <div class="mh-eduyear">2020</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>App State Management</li>
+                                            <li><i class="fa fa-circle"></i>User Interface Designing</li>
+                                            <li><i class="fa fa-circle"></i>Managing Shared Preferences</li>
+                                        </ul>
+                                        <span>Worked In :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Shikhar Feedbacks applicationt</li>
+                                            <li><i class="fa fa-circle"></i>E-Commerce Application</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                          <h4>Organizer/ volunteer</h4>
+                                        <span>Organizer at :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>NCIT Expo on Technology 2019</li>
+                                            <li><i class="fa fa-circle"></i>Global Cyber Security Summit 2019</li>
+                                            <li><i class="fa fa-circle"></i>Software Freedom Day 2019</li>
+                                        </ul>
+                                        <span>Volunteered at :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>AI Expo Nepal 2019</li>
+                                            <li><i class="fa fa-circle"></i>NCIT Sports Week 2018/2019</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                          <h4>Participation & Certificates</h4>
+                                        <span>Participayed in :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Second Nepal Winter School of AI</li>
+                                            <li><i class="fa fa-circle"></i>Third Nepali Samaj Programming Contest</li>
+                                            <li><i class="fa fa-circle"></i>Sagarmatha Tech Fest Website Competition 2019</li>
+                                            <li><i class="fa fa-circle"></i>NCIT Web Designing Competition</li>
+                                        </ul>
+                                        <span>Certification :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i><a href = "https://coursera.org/share/ba602422d4924f7c70389bdfce7ccc6c">Coursera Data Science Course</a> 2019</li>
+                                            <li><i class="fa fa-circle"></i>First Runner Up at Sagarmatha Tech Fest Website Designing Competition.</li>
+                                            <li><i class="fa fa-circle"></i><a href="https://www.edugrad.com/certificate/16841/7">Edugrad Git Course</li>
+                                        </ul>
+                                    </div>
 
-            }
-            .circular--square {
-                                  border-top-left-radius: 50% 50%;
-                                  border-top-right-radius: 50% 50%;
-                                  border-bottom-right-radius: 50% 50%;
-                                  border-bottom-left-radius: 50% 50%;
-                              }
-            p{
-              font-size: 15px;
-              line-height: 20px;
-            }
-  </style>
-  
-  
-</head>
-<body>
-  <div class="card">
-              <section>
-                                   
-                                      <div>
-                                        <div><h2>पोषण पाण्डे</h2>
-                                          
-                                        <div><strong>Programmer|Developer|Designer</strong></div></div>
-                                        <br><br>
 
-
-                                          <div>Hi, I'm Poshan Pandey. I believe in doing everything that makes me more human and I wish to speak fluent humor. I'm a BE Software student studying at Nepal College of Information Technology(NCIT). Currently, I'm engaged in Flutter development and You can contact me for projects.</div>
-                                          <h5>Get In Touch</h5>
-                                          <p><a href="https://github.com/poshan0126">Github</a>       <a href="https://www.facebook.com/jay.poshan?ref=bookmarks"> Facebook</a>      <a href="https://twitter.com/POSHAN0126">Twitter</a>       <a href="https://www.linkedin.com/in/poshan-pandey-92553a143/">Linkedin</a>     <a href="https://www.instagram.com/poshan_pandey/">Instagram</a></p>          
-                                        
-                                      </div>
-              </section>
-              <section>
-                      <div><h3><strong>Resume</strong></h3></div>
-                      <br>
-                                      <div>
-		                                      <div>
-		                                      	<img class="circular--square" src="assets/Poshan_Pandey.jpg" alt="Poshan" title="Poshan Pandey">
-		                                      </div>
-                                          <br>
-		                                      <p>First Name: Poshan<br>
-		                                      <br>Last Name: Pandey<br>
-		                                      <br>Date of Birth: 1998/05/09<br>
-		                                      <br>Birth Place: Belkotgadhi Municipality-10, Nuwakot, Nepal<br>
-		                                      <br>Gender: Male<br>
-		                                      <br>Nationality: Nepali<br>
-		                                      <br>Mobile Number: +9779860003427<br>
-		                                      <br>E-mail: hello@poshan.com.np<br>
-		                                      <br>Website: WWW.poshan.com.np<br></p>
-                                      </div>
-              </section>
-<br><br>
-              <section>
-
-                  <div>
-                      <h4>Skills and Training</h4>
-                  </div>
-                                      <div>
-                                      <p>I can develop mobile and web applications using flutter framework. I can also develop android software using android studio and java.</p> 
-                                      <p>I am very enthusiast about machine learning and I am working in some of my in house projects using tensorflow framework.</p>
-                                      <p>I can develop dynamic webstes using django as well as design interactive user interface using HTML/CSS and also bootstrap.</p>
-                                      <p>I am certified by the Coursera Data Science Course.</p>
-                                      <p>I Participated in 11 days workshop at Second Nepal Winter School in AI.</p>
-                                      <p>I can also work using rest API.</p>
-                                      <p>I can code programme in FORTAN, C, C++, Python, Java & Dart. I have keen knowledge of solving problems using those languages.</p>
-                                      <p>I can write good formal documents in English and Nepali language.</p>
-                                      <p>I write really neat codes.</p>
-                                   </div>
-              </section>
-              <br><br>
-              <section>
-
-                  <div>
-                      <h4>Projects</h4>
-                          </div>
-                                      <div>
-                                      <p>My first college 1 credit project is a chess game designed in unity.(<a>here</a>)</p>
-                                      <p>My second college 3 credit project is sentiment analysis of tweets using KNN and NBayes network.(<a>here</a>)</p>
-                                      <p>I have developed a simple tic tac toe arcade game.(<a>here</a>)</p>
-                                      <p>I have designed a Real Estate Nepal site using django framework.(<a>here</a>)</p>
-                                      <p>I developed a simple weights on planets app using flutter.(<a>here</a>)</p>
-                                      <p>PS: you can find my projects in github link provided.</p>
-                                   </div>
-              </section>
-              <br><br>
-              <section>
-
-                                  <div><h4>Awards, Achievements and Volunteering</h4></div>
-                                  <div>
-                                      <p>I along with team of four were first runner up in the Sagarmatha Engineering College Tech Fest 2019.</p>
-                                      <p>I along with NOSK team successfully conducted SFD event 2019 in NCIT.</p>
-                                      <p>I volunteered in the Global Cyber Security Summit 2018.</p>
-                                      <P>I volunteered in Sindupalchowk district, Nepal for 20 days during earthquake 2016. </P>
-                                      <p>I am one of the executive member of NEXT 2019 happened in NCIT.</p>
-                                      <p>I am life time member of Nepal Red Cross Society.</p>
-                                      <p>I am a brown belt holder in Shito-rio karate from Namuna Dojo.</p>
-                                  </div>
-              </section>
-<br><br>
-              <section>
-
-                  <div><h4>Education</h4></div>
-                  <div><h5>School Level(SLC)[2014]</h5><p>I passed my SLC level from Pragya HSBS Thamel, Kathmandu with the percentage of 79.6.</p></div>
-                  <div><h5>Intermediate Degree(+2)[2015-2016]</h5>
-                    <p>I joined Nationa School of Sciences belonging to National Institute of Science and Technology(NIST) foundation Lainchour, Kathmandu in 2015 chosing sciences as major. Then I achieved my intermediate degree with 76.8% in 2016.</p>
-                  </div> 
-                  <div><h5>Undergraduate/Bachelors[2016-present]</h5>      
-                    <p>I enrolled Nepal College of Information Technology(NCIT) in 2016 in Bachelors of Engineering in software program. And till now I m studying here. I have GPA of above 3.5 in average in all semesters till now.</p>
-                  </div>
-              </section>
-              <br><br>
-              <section>
-
-                  <div><h4>Hobby</h4></div>
-                  <p>I love to sing.</p>
-                  <p>I like travelling.</p>
-                  <p>I like playing pool.</p>
-                  <p>I love eating.</p>
-                 
-              </section>
-              <section>I sometime write Information Technology based articles. You can find my articles <a href="https://www.thejay.tech/">here</a>.</section>
-</div>
-
+                                    <div class="mh-work">
+                                 <h3>Blogging</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>I write Machine Learning based articles at <h6><a href="https://www.thejay.tech/">The JAY Tech</a>.</h6></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <!--
+        ===================
+           TESTIMONIALS
+        ===================
+        -->
+        <section class="mh-testimonial" id="mh-testimonial">
+            <div class="home-v-img">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                            <h3>My Testimonials</h3>
+                        </div>
+                        <div class="col-sm-12 wow fadeInUp" id="mh-client-review" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="assets/images/bb.jfif" alt="" class="img-fluid">
+                                    <p>Poshan has always been a competitive student in both studies and technical knowledges. He was consistent on securing good GPA and presenting great ideas and projects. Also he has good leadership skill.</p>
+                                    <h4><a href="https://www.linkedin.com/in/birendra-bista-8a004876/">Birendra Bista</a></h4>
+                                    <span>HOD, Software Engineering, NCIT</span>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="assets/images/mk.jfif" alt="" class="img-fluid">
+                                    <p>I know Poshan since 2013, I have seen him grow as an IT Professional. He is really very talented and innovative. He has done some really impressive ML based and mobile application projects. I am a  big admirer of his skill</p>
+                                    <h4><a href="https://www.linkedin.com/in/madhu-khadka-a43a3713b/">Madhu Khadka</a></h4>
+                                    <span>Founder, Tandav Tech</span>
+                                </div>
+                            </div>                    
+                            
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <img src="assets/images/ba.jfif" alt="" class="img-fluid">
+                                    <p>While working in Techno Dawn Pvt, Ltd with Poshan, I came to know about his enthusiassm on solving a problem. There was not any time when he left some work incomplete. He was punctual and really very creative. We are working together on some mobile application projects and he is a great team member to work with.</p>
+                                    <h4><a href="https://www.linkedin.com/in/bikramaryal//">Bikram Aryal</a></h4>
+                                    <span>Full Stack Developer, Techno Dawn Pvt Ltd.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           FOOTER 1
+        ===================
+        -->
+        <footer class="mh-footer" id="mh-contact">
+            <div class="map-image image-bg">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                            <h3>Contact Me</h3>
+                        </div>
+                        <div class="col-sm-12 mh-footer-address">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-location-arrow"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Address</h4>
+                                            <address>
+                                                Mahalaxmi, Lalitpur, 44700
+ <br> 
+                                                 Nepal
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:yourmail@email.com">hello@poshan.com.np</a><br>
+                                            <a href="mailto:yourmail@email.com">poshan0126@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            <a href="callto:(+977)9860003427">+977 9860003427</a><br>
+                                            <a href="callto:(+977)9860003427">+977 9818475265</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>     
+    
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js"></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <!-- Map api -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+    <!-- Custom Scripts-->
+    <script src="assets/js/map-init.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
 </body>
+
 </html>
