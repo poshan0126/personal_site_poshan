@@ -1,636 +1,689 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Poshan Pandey</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Hi! I am Poshan Pandey and I am a Software Engineer." />
-        <meta name="keywords" content="Poshan Pandey, Software Engineer, Nepal" />
-        <meta name="developer" content="Poshan Pandey">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poshan Pandey</title>
+    <meta name="description" content="AI Engineer specializing in LLMs, Multi-Agent Systems, and Production ML.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <!-- FAV AND ICONS   -->
-        <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            padding: 30px 8vw;
+            min-height: 100vh;
+        }
         
-        <!-- Google Font-->
-        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
-        <!-- Animate CSS-->
-        <link rel="stylesheet" href="assets/plugins/css/animate.css">
-        <!-- Owl Carousel CSS-->
-        <link rel="stylesheet" href="assets/plugins/css/owl.css">
-        <!-- Fancybox-->
-        <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
-        <!-- Custom CSS-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         
-        <!-- Colors -->
-        <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue">
-        <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
-    </head>
-    <body class="white-vertion black-bg">
-        <!-- Start Loader -->
-        <div class="section-loader">
-            <div class="loader">
-                <div></div>
-                <div></div> 
-            </div>
-        </div>
-        <!-- End Loader -->
+        .top-nav {
+            text-align: right;
+            margin-bottom: 40px;
+        }
         
-        <!--
-        ===================
-           NAVIGATION
-        ===================
-        -->
-        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon icon"></span>
-                        </button>
-                    
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#mh-home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mh-about">About</a>
-                                </li>                            
-                                <li class="nav-item">
-                                   <a class="nav-link" href="#mh-experience">Experiences</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mh-contact">Contact</a>
-                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.yarsavision.com/">Yarsa Vision (Blog)</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        .top-nav a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        
+        .top-nav a:hover {
+            opacity: 0.7;
+        }
+        
+        .top-nav a.active {
+            color: #888;
+        }
+        
+        /* View containers */
+        .view {
+            display: none;
+        }
+        
+        .view.active {
+            display: block;
+        }
+        
+        /* Home styles */
+        .home-header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #ffffff;
+            display: inline-block;
+        }
+        
+        .home-content p {
+            font-size: 16px;
+            color: #b8b8b8;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            max-width: 900px;
+        }
+        
+        .home-content a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        
+        .bottom-links {
+            margin-top: 40px;
+        }
+        
+        .bottom-links a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        
+        /* Portfolio & Philosophy shared styles */
+        .page-header {
+            margin-bottom: 60px;
+            text-align: left;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #e5e5e5;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #e5e5e5;
+            margin-bottom: 40px;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #888;
+        }
+        
+        /* Grid layouts */
+        .grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .projects-grid {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+        
+        .quotes-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        /* Project cards */
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #888;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            color: #e5e5e5;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .project-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .project-title a:hover {
+            opacity: 0.8;
+        }
+        
+        .project-type {
+            color: #888;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        
+        .award {
+            background: rgba(255, 255, 255, 0.05);
+            color: #e5e5e5;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .project-description {
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .project-features {
+            margin-bottom: 20px;
+        }
+        
+        .project-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .project-features li {
+            color: #b0b0b0;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .project-features li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.05);
+            color: #888;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Photo Gallery */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 20px;
+        }
+        
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .photo-item:nth-child(1) { grid-row: span 2; }
+        .photo-item:nth-child(2) { grid-column: span 2; }
+        .photo-item:nth-child(5) { grid-row: span 2; }
+        
+        .photo-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            padding: 20px 15px 12px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        
+        /* Photo Modal */
+        .photo-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+        
+        .photo-modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .photo-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: opacity 0.3s;
+        }
+        
+        .photo-modal-close:hover {
+            opacity: 0.7;
+        }
+        
+        #modal-image {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        
+        .photo-modal-caption {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+        
+        /* Quote cards */
+        .quote-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quote-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #888;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .quote-card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quote-text {
+            font-size: 1.2rem;
+            color: #e5e5e5;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .quote-author {
+            color: #888;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: right;
+        }
+        
+        .quote-author::before {
+            content: '— ';
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quotes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .photo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                grid-auto-rows: 200px;
+            }
+            
+            .photo-item:nth-child(n) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="#home" onclick="showView('home')" class="nav-link active">Home</a>
+        <a href="#portfolio" onclick="showView('portfolio')" class="nav-link">Portfolio</a>
+        <a href="#philosophy" onclick="showView('philosophy')" class="nav-link">Philosophy</a>
+    </nav>
+    
+    <!-- Home View -->
+    <div id="home-view" class="view active">
+        <header class="home-header">
+            <h1 id="page-title">Poshan Pandey</h1>
         </header>
         
-        <!--
-        ===================
-            HOME 
-        ===================
-        -->
-        <section class="mh-home" id="mh-home">
-            <div class="home-ovimg">
-                <div class="container">
-                    <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
-                        <div class="col-sm-6">
-                            <div class="mh-header-info">
-
-                                <div class="mh-promo wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                    <span>HEY! GLAD YOU'RE HERE. I AM ..</span>
-                                </div>
-                                <br>
-                                <h4 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">Poshan Pandey (पोषण पाण्डे)</h4>
-                                <h6 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">Software Engineer</h6>
-                                
-                                <ul>
-                                    <li class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s"><i class="fa fa-envelope"></i><a href="mailto:">hello@poshan.com.np</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s"><i class="fa fa-map-marker"></i><address>Eugene, Or, USA</address></li>
-                                    
-                                </ul>
-                                
-                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                                    <li><a href="https://github.com/poshan0126"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/poshan-pandey-92553a143/"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://gitlab.com/poshan0126"><i class="fa fa-gitlab"></i></a></li>
-                                    <li><a href="https://www.facebook.com/jay.poshan"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/jayposhan"><i class="fa fa-twitter"></i></a></li>
-                                    
-                                    <li><a href="https://www.instagram.com/poshan_pandey/"><i class="fa fa-instagram"></i></a></li>
-                                    
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="hero-img wow fadeInUp" data-wow-duration="0.1s" data-wow-delay="0.1s">
-                                <div class="img-border">
-                                    <img src="assets/images/pp.JPG" alt=""  class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>   
+        <div class="home-content" id="main-content">
+            <!-- Content will be loaded from JSON -->
+        </div>
         
-        <!--
-        ==================
-            ABOUT
-        =================
-        -->
-        <section class="mh-about" id="mh-about">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                            <img src="assets/images/ab-img.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="mh-about-inner">
-                            <h2 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">About Me</h2>
-                            <p class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                                <b>Hello </b>I am a passionate Software Engineer currently focused on building Agentic AI systems and RAG (Retrieval-Augmented Generation) pipelines.  My motto for life is:
-                                <div class="mh-about-tag" data-wow-duration="0.1s" data-wow-delay="0.1s">
-                                    <ul>
-                                        <li><span>This world is cruel; therefore, I won't be.</span></li>
-                                    </ul>
-                                </div>
-                                Outside of work and study, I am an avid philosophy fan and I love to read books and travel. Please feel free to connect with me! I would love to learn more about you!
-                            </p>
-                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                                <ul>
-                                    <li><span>Data Science</span></li>
-                                    <li><span>Machine Learning</span></li>
-                                    <li><span>Software Development</span></li>
-                                    <li><span>Philosophy</span></li>
-                                    <li><span>Environment</span></li>
-                                    <li><span>Travel</span></li>
-                                    <li><span>Art</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-        
-        <!--
-        ===================
-           SERVICE
-        ===================
-        -->
-        <section class="mh-service">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                        <h2>What I do</h2>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                            <i class="fa fa-object-ungroup sky-color"></i>
-                            <h5>Artificial Intelligence</h5>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                            <i class="fa fa-mobile purple-color"></i>
-                            <h5>Mobile Application Development</h5>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                            <i class="fa fa-globe blue-color"></i>
-                            <h5>Web Development</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>     
-        
-        <!--
-        ===================
-           SKILLS
-        ===================
-        -->
-        <!-- <section class="mh-skills" id="mh-skills">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="section-title text-center col-sm-12">
-                        <h2>Skills</h2>-->
-                    <!-- </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="mh-skills-inner">
-                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                                <h3>Technical Skills</h3>
-                                <div class="each-skills">
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">Flutter</div>
-                                                <div class="percentagem-num">80%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 80%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">Python</div>
-                                                <div class="percentagem-num">70%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 70%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">SQL</div>
-                                                <div class="percentagem-num">60%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 50%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">Java</div>
-                                                <div class="percentagem-num">50%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 50%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>                                   
-                                    <div class="candidatos">
-                                        <div class="parcial">
-                                            <div class="info">
-                                                <div class="nome">HTML & CSS</div>
-                                                <div class="percentagem-num">80%</div>
-                                            </div>
-                                            <div class="progressBar">
-                                                <div class="percentagem" style="width: 80%;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-sm-12 col-md-6">
-                        <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
-                            <h3>Professional Skills</h3>
-                            <ul class="mh-professional-progress" >
-                                <li>
-                                    <div class="mh-progress mh-progress-bfa-bullseye" data-progress="90"></div>
-                                    <div class="pr-skill-name">Communication</div>
-                                </li>
-                                <li>
-                                    <div class="mh-progress mh-progress-bfa-bullseye" data-progress="85"></div> 
-                                    <div class="pr-skill-name">Team Work</div>
-                                </li>
-                                <li>
-                                    <div class="mh-progress mh-progress-bfa-bullseye" data-progress="85"></div>
-                                    <div class="pr-skill-name">Project Management</div>
-                                </li> 
-                                <li>
-                                    <div class="mh-progress mh-progress-bfa-bullseye" data-progress="90"></div>
-                                    <div class="pr-skill-name">Creativity</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        <!-- </section> -->
-        
-        <!--
-        ===================
-           EXPERIENCES
-        ===================
-        -->
-        <section class="mh-experince" id="mh-experience">
-            <div class="bolor-overlay">
-                <div class="container">
-                    <div class="row section-separator">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="mh-education">
-                                 <h3 class="wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">Education</h3>
-                                <div class="mh-education-deatils">
-                                    
-                                    <!-- Education Institutes-->
-                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                                        <h4>Masters of Science Compute Science From <a href="https://www.iit.edu/">Illinois Institute of Technology</a></h4>
-                                        <div class="mh-eduyear">2022-2024</div>
-                                        <!-- <p>I completed Bachelor of Software Engineering from Nepal College of Information Technology. My CGPA is 3.60. </p>
-                                        <br>
-                                         <h6>Elective I</h6>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i> Data Mining and Warehousing</li>
-                                            
-                                        </ul>
-                                        <h6>Elective II</h6>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i>  Natural Language Processing</li>
-                                        </ul> -->
-                                    </div>   
-                                    <!-- Education Institutes-->
-                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                                        <h4>Bachelor of Software Engineering From <a href="https://ncit.edu.np/">Nepal College of Information and Technology</a></h4>
-                                        <div class="mh-eduyear">2016-2021</div>
-                                        <!-- <p>I completed Bachelor of Software Engineering from Nepal College of Information Technology. My CGPA is 3.60. </p>
-                                                                            <br>
-                                                                             <h6>Elective I</h6>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i> Data Mining and Warehousing</li>
-                                                                                
-                                                                            </ul>
-                                                                            <h6>Elective II</h6>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>  Natural Language Processing</li>
-                                                                            </ul> -->
-                                    </div>
-                                    <!-- Education Institutes-->
-                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
-                                        <h4>Intermediate From <a href="https://nist.edu.np/">National School of Sciences</a></h4>
-                                        <div class="mh-eduyear">2014-2016</div>
-                                        <!-- <p>I completed my intermediate level study from National School of Sciences choosing sciences as major. I secured 72.40% in agregate in my intermediate level. </p> -->
-                                    </div>                                
-                                    <!-- Education Institutes-->
-                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                                        <h4>School Leaving Certificate(SLC) From <a href="https://www.facebook.com/Pragyaschool2046/">Pragya Higher Secondary Boarding School</a></h4>
-                                        <div class="mh-eduyear">2011-2014</div>
-                                        <!-- <p>I gave my SLC examination from Pragya HSEBS and secured 79.63 %. </p> -->
-                                    </div>
-
-
-                                     <!-- <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
-                                        <h4>Concepts</h4>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Data Structure & Algorithm</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Artificial Intelligence</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Probablity, Statistics & Queing theory</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Algebra, Calculus and Discrete Maths</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Agile software development</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Object Oriented Programming</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Design Patterns</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Software Architecture</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Database Management System</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Software Quality Assurance</li>
-                                            <li><i class="fa fa-bullseye"></i> &nbsp;&nbsp;Real Time Operating System</li>
-
-                                             
-                                        </ul>
-                                    </div>   -->
-
-                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                                    	<div class="mh-work">
-                                        <h4>Blogging</h4>
-                                          <ul class="work-responsibility">
-                                             <li> I write Machine Learning and data science based articles at <h6><a href="https://www.yarsavision.com/">Yarsa Vision</a></h6></li>
-                                          </ul>
-                                
-                            </div>
-                            
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="mh-work">
-                                 <h3>Work Experience</h3>
-                                <div class="mh-experience-deatils">
-                                    <!-- Education Institutes-->
-                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                        <h4>Software Engineer at <a href="https://www.twentyideas.com/">Twenty Ideas</a></h4>
-                                        <div class="mh-eduyear">Nov 2024 - Present</div>
-                                        <!-- <span>Responsibility :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>App State Management</li>
-                                                                                <li><i class="fa fa-bullseye"></i>User Interface Designing</li>
-                                                                                <li><i class="fa fa-bullseye"></i>Managing Shared Preferences</li>
-                                                                            </ul>
-                                                                            <span>Worked In :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>Shikhar Feedbacks application</li>
-                                                                                <li><i class="fa fa-bullseye"></i>E-Commerce Application</li>
-                                                                            </ul> -->
-                                    </div>
-                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                        <h4>Graduate Research Assistant at <a href="https://www.iit.edu/">Illinois Institute of Technology</a></h4>
-                                        <div class="mh-eduyear">Jan 2023 - July 2024</div>
-                                        <!-- <span>Responsibility :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>App State Management</li>
-                                                                                <li><i class="fa fa-bullseye"></i>User Interface Designing</li>
-                                                                                <li><i class="fa fa-bullseye"></i>Managing Shared Preferences</li>
-                                                                            </ul>
-                                                                            <span>Worked In :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>Shikhar Feedbacks application</li>
-                                                                                <li><i class="fa fa-bullseye"></i>E-Commerce Application</li>
-                                                                            </ul> -->
-                                    </div>
-                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                        <h4>Software Developer at <a href="https://ekbana.com/">Ekbana Solutions.</a></h4>
-                                        <div class="mh-eduyear">Feb 2021 - June 2022</div>
-                                        <!-- <span>Responsibility :</span>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i>App State Management</li>
-                                            <li><i class="fa fa-bullseye"></i>User Interface Designing</li>
-                                            <li><i class="fa fa-bullseye"></i>Managing Shared Preferences</li>
-                                        </ul>
-                                        <span>Worked In :</span>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i>Shikhar Feedbacks application</li>
-                                            <li><i class="fa fa-bullseye"></i>E-Commerce Application</li>
-                                        </ul> -->
-                                    </div>
-                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                        <h4>Part-Time AI Research Assistant at <a href="https://mountech.com.np/#/">MounTech Solutions.</a></h4>
-                                        <div class="mh-eduyear">Jan 2020 - Aug 2020</div>
-                                        <!-- <span>Responsibility :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>App State Management</li>
-                                                                                <li><i class="fa fa-bullseye"></i>User Interface Designing</li>
-                                                                                <li><i class="fa fa-bullseye"></i>Managing Shared Preferences</li>
-                                                                            </ul>
-                                                                            <span>Worked In :</span>
-                                                                            <ul class="work-responsibility">
-                                                                                <li><i class="fa fa-bullseye"></i>Shikhar Feedbacks application</li>
-                                                                                <li><i class="fa fa-bullseye"></i>E-Commerce Application</li>
-                                                                            </ul> -->
-                                    </div>
-                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-                                        <h4>Mobile Application Developer Intern at <a href="https://technodawn.com/">Techno Dawn PVT LTD.</a></h4>
-                                        <div class="mh-eduyear">Oct 2019 - Feb 2020</div>
-                                        <!-- <span>Responsibility :</span>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i>App State Management</li>
-                                            <li><i class="fa fa-bullseye"></i>User Interface Designing</li>
-                                            <li><i class="fa fa-bullseye"></i>Managing Shared Preferences</li>
-                                        </ul>
-                                        <span>Worked In :</span>
-                                        <ul class="work-responsibility">
-                                            <li><i class="fa fa-bullseye"></i>Shikhar Feedbacks application</li>
-                                            <li><i class="fa fa-bullseye"></i>E-Commerce Application</li>
-                                        </ul> -->
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>    
-        
-        <!--
-        ===================
-           TESTIMONIALS
-        ===================
-        -->
-<!--         <section class="mh-testimonial" id="mh-testimonial">
-            <div class="home-v-img">
-                <div class="container">
-                    <div class="row section-separator">
-                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                            <h3>My Testimonials</h3>
-                        </div>
-                        <div class="col-sm-12 wow fadeInUp" id="mh-client-review" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                            <div class="each-client-item">
-                                <div class="mh-client-item dark-bg black-shadow-1">
-                                    <img src="assets/images/bb.jfif" alt="" class="img-fluid">
-                                    <p>Poshan has always been a competitive student in both studies and technical knowledges. He was consistent on securing good GPA and presenting great ideas and projects. Also he has good leadership skill.</p>
-                                    <h4><a href="https://www.linkedin.com/in/birendra-bista-8a004876/">Er. Birendra Bista</a></h4>
-                                    <span>HOD, Software Engineering, NCIT</span>
-                                </div>
-                            </div>
-                            <div class="each-client-item">
-                                <div class="mh-client-item dark-bg black-shadow-1">
-                                    <img src="assets/images/mk.jfif" alt="" class="img-fluid">
-                                    <p>I know Poshan since 2013, I have seen him grow as an IT Professional. He is really very talented and innovative. He has done some really impressive ML based and mobile application projects. I am a  big admirer of his skill</p>
-                                    <h4><a href="https://www.linkedin.com/in/madhu-khadka-a43a3713b/">Er. Madhu Khadka</a></h4>
-                                    <span>Founder, Tandav Tech</span>
-                                </div>
-                            </div>                    
-                            
-                            <div class="each-client-item">
-                                <div class="mh-client-item dark-bg black-shadow-1">
-                                    <img src="assets/images/ba.jfif" alt="" class="img-fluid">
-                                    <p>While working in Techno Dawn Pvt, Ltd with Poshan, I came to know about his enthusiassm on solving a problem. We are working together on some mobile application projects and he is a great team member to work with.</p>
-                                    <h4><a href="https://www.linkedin.com/in/bikramaryal//">Er. Bikram Aryal</a></h4>
-                                    <span>Full Stack Developer, Techno Dawn Pvt Ltd.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         -->
-        <!--
-        ===================
-           FOOTER 1
-        ===================
-        -->
-        <footer class="mh-footer" id="mh-contact">
-            <div class="map-image image-bg">
-                <div class="container">
-                    <div class="row section-separator">
-                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                            <h3>Contact Me</h3>
-                        </div>
-                        <div class="col-sm-12 mh-footer-address">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.3s">
-                                        <div class="each-icon">
-                                            <i class="fa fa-location-arrow"></i>
-                                        </div>
-                                        <div class="each-info">
-                                            <h4>Address</h4>
-                                            <address>
-                                                Eugene, Or, USA
-                                            </address>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.15s">
-                                        <div class="each-icon">
-                                            <i class="fa fa-envelope-o"></i>
-                                        </div>
-                                        <div class="each-info">
-                                            <h4>Email</h4>
-                                            <a href="mailto:hello@poshan.com.np">hello@poshan.com.np</a><br><br>
-                                               
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                                        <div class="each-icon">
-                                            <i class="fa fa-globe"></i>
-                                        </div>
-                                        <div class="each-info">
-                                            <h4>Website</h4>
-                                            <a href="https://www.poshan.com.np">www.poshan.com.np</a><br><br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>     
-        
+        <div class="bottom-links" id="social-links">
+            <!-- Social links will be loaded from JSON -->
+        </div>
+    </div>
     
-    <!--
-    ==============
-    * JS Files *
-    ==============
-    -->
+    <!-- Portfolio View -->
+    <div id="portfolio-view" class="view">
+        <div class="container">
+            <div class="page-header">
+                <h1>Portfolio</h1>
+                <p class="subtitle" id="portfolio-subtitle"><!-- Subtitle will be loaded from JSON --></p>
+            </div>
+            
+            <section class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="grid projects-grid" id="projects-container">
+                    <!-- Projects will be loaded from JSON -->
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Photography</h2>
+                <div class="photo-grid" id="photo-gallery">
+                    <!-- Photos will be loaded from JSON -->
+                </div>
+            </section>
+        </div>
+    </div>
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Philosophy View -->
+    <div id="philosophy-view" class="view">
+        <div class="container">
+            <div class="page-header">
+                <h1>Philosophy</h1>
+                <p class="subtitle" id="philosophy-subtitle"><!-- Subtitle will be loaded from JSON --></p>
+            </div>
+            
+            <section class="section">
+                <div class="grid quotes-grid" id="quotes-container">
+                    <!-- Quotes will be loaded from JSON -->
+                </div>
+            </section>
+        </div>
+    </div>
     
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/plugins/js/owl.carousel.js"></script>
-    <!-- validator -->
-    <script src="assets/plugins/js/validator.min.js"></script>
-    <!-- wow -->
-    <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- mixin js-->
-    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
-    <!-- bfa-bullseye progress-->
-    <script src="assets/plugins/js/bfa-bullseye-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Fancybox js-->
-    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- isotope js-->
-    <script src="assets/plugins/js/isotope.pkgd.js"></script>
-    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
-    <!-- Map api -->
-    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
-    <!-- Custom Scripts-->
-    <script src="assets/js/map-init.js"></script>
-    <script src="assets/js/custom-scripts.js"></script>
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="photo-modal">
+        <div class="photo-modal-content">
+            <span class="photo-modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-caption" class="photo-modal-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        // View switching function
+        function showView(viewName) {
+            // Hide all views
+            document.querySelectorAll('.view').forEach(view => {
+                view.classList.remove('active');
+            });
+            
+            // Remove active class from all nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Show selected view
+            document.getElementById(viewName + '-view').classList.add('active');
+            
+            // Add active class to clicked nav link
+            document.querySelector(`[onclick="showView('${viewName}')"]`).classList.add('active');
+            
+            // Update URL hash without page reload
+            history.pushState(null, null, '#' + viewName);
+        }
+        
+        // Handle browser back/forward buttons
+        window.addEventListener('hashchange', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && ['home', 'portfolio', 'philosophy'].includes(hash)) {
+                showView(hash);
+            }
+        });
+        
+        // Load initial view based on URL hash
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && ['portfolio', 'philosophy'].includes(hash)) {
+                showView(hash);
+            } else {
+                showView('home');
+            }
+        });
+        
+        // Load content from JSON
+        Promise.all([
+            fetch('data/content.json').then(r => r.json()),
+            fetch('data/photos.json').then(r => r.json()),
+            fetch('data/quotes.json').then(r => r.json())
+        ]).then(([content, photos, quotes]) => {
+            // Load home content
+            const homeContent = content.index;
+            document.getElementById('page-title').textContent = homeContent.title;
+            
+            const mainContent = document.getElementById('main-content');
+            mainContent.innerHTML = `
+                <p>${homeContent.intro}</p>
+                <p>${homeContent.cogym.text} <a href="${homeContent.cogym.url}" target="_blank" rel="noopener noreferrer">${homeContent.cogym.link}</a> ${homeContent.cogym.description}</p>
+                <p>${homeContent.contact.text} <a href="mailto:${homeContent.contact.email}">${homeContent.contact.email}</a>.</p>
+            `;
+            
+            const socialLinks = document.getElementById('social-links');
+            socialLinks.innerHTML = `
+                <a href="${homeContent.social.github.url}" target="_blank">${homeContent.social.github.text}</a>
+                <a href="${homeContent.social.linkedin.url}" target="_blank">${homeContent.social.linkedin.text}</a>
+            `;
+            
+            // Load portfolio content
+            const portfolio = content.portfolio;
+            document.getElementById('portfolio-subtitle').textContent = portfolio.subtitle;
+            
+            const projectsContainer = document.getElementById('projects-container');
+            portfolio.projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                
+                let awardHtml = project.award ? `<div class="award">${project.award}</div>` : '';
+                let featuresHtml = project.features.map(f => `<li>${f}</li>`).join('');
+                let techHtml = project.tech.map(t => `<span class="tech-badge">${t}</span>`).join('');
+                
+                projectCard.innerHTML = `
+                    <div class="project-header">
+                        <h3 class="project-title"><a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.name}</a></h3>
+                        <div class="project-type">${project.type}</div>
+                    </div>
+                    ${awardHtml}
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-features">
+                        <ul>${featuresHtml}</ul>
+                    </div>
+                    <div class="tech-stack">${techHtml}</div>
+                `;
+                
+                projectsContainer.appendChild(projectCard);
+            });
+            
+            // Load photos
+            const photoGallery = document.getElementById('photo-gallery');
+            photos.forEach((photo, index) => {
+                const photoItem = document.createElement('div');
+                photoItem.className = 'photo-item';
+                
+                photoItem.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.alt}" loading="lazy">
+                    <div class="photo-caption">${photo.caption}</div>
+                `;
+                
+                photoItem.addEventListener('click', () => {
+                    openPhotoModal(photo.src, photo.caption);
+                });
+                
+                photoGallery.appendChild(photoItem);
+            });
+            
+            // Load philosophy content
+            const philosophy = content.philosophy;
+            document.getElementById('philosophy-subtitle').textContent = philosophy.subtitle;
+            
+            // Load quotes
+            const quotesContainer = document.getElementById('quotes-container');
+            quotes.forEach(quote => {
+                const quoteCard = document.createElement('div');
+                quoteCard.className = 'quote-card';
+                
+                quoteCard.innerHTML = `
+                    <p class="quote-text">${quote.text}</p>
+                    <p class="quote-author">${quote.author}</p>
+                `;
+                
+                quotesContainer.appendChild(quoteCard);
+            });
+        }).catch(error => {
+            console.error('Error loading content:', error);
+        });
+        
+        // Photo modal functionality
+        const modal = document.getElementById('photo-modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalCaption = document.getElementById('modal-caption');
+        const closeModal = document.querySelector('.photo-modal-close');
+        
+        function openPhotoModal(src, caption) {
+            modal.style.display = 'block';
+            modalImage.src = src;
+            modalCaption.textContent = caption;
+        }
+        
+        function closePhotoModal() {
+            modal.style.display = 'none';
+            modalImage.src = '';
+            modalCaption.textContent = '';
+        }
+        
+        closeModal.addEventListener('click', closePhotoModal);
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closePhotoModal();
+            }
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                closePhotoModal();
+            }
+        });
+    </script>
 </body>
-
 </html>

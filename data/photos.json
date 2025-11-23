@@ -1,0 +1,32 @@
+[
+  {
+    "src": "images/lighthouse.jpg",
+    "alt": "Heceta Head Lighthouse",
+    "caption": "Heceta Head Lighthouse near Florence, Oregon - a beacon of hope standing guard over the rugged Pacific coastline since 1894."
+  },
+  {
+    "src": "images/cratelate1.jpeg",
+    "alt": "Crater Lake",
+    "caption": "Where ancient volcanic forces carved perfection into stone, leaving behind a sapphire mirror 2,000 feet deep."
+  },
+  {
+    "src": "images/mtrainer.jpeg",
+    "alt": "Mount Rainier",
+    "caption": "The mountain that stands sentinel over the Pacific Northwest, crowned in glacial ice and wrapped in morning mist."
+  },
+  {
+    "src": "images/trillium3.jpeg",
+    "alt": "Trillium Lake with Mount Hood",
+    "caption": "Trillium Lake mirrors Mount Hood's peak in perfect stillness - Oregon's crown jewel reflected in glass-calm waters."
+  },
+  {
+    "src": "images/seatle.jpeg",
+    "alt": "Seattle cityscape",
+    "caption": "Steel and glass reaching toward clouds, the emerald city where innovation meets the endless Pacific horizon."
+  },
+  {
+    "src": "images/ggb.jpeg",
+    "alt": "Golden Gate Bridge",
+    "caption": "Art Deco towers rising from San Francisco Bay - where engineering poetry spans the impossible in International Orange."
+  }
+]

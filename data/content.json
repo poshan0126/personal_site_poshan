@@ -1,0 +1,85 @@
+{
+  "index": {
+    "title": "Poshan Pandey",
+    "description": "AI Engineer specializing in LLMs, Multi-Agent Systems, and Production ML.",
+    "navigation": {
+      "portfolio": "Portfolio",
+      "philosophy": "Philosophy"
+    },
+    "intro": "I write software, design AI systems, and explore how technology, art, and philosophy shape the way we think. As an engineer, I build across the full stack, from backend systems to frontend experiences, while focusing on how AI, automation, and multi-agent systems are reshaping both software and the future.",
+    "cogym": {
+      "text": "As we lean more on AI, we're losing a bit of our cognitive strength every day, so I'm building",
+      "link": "Cogym.ai",
+      "url": "https://cogym.ai/",
+      "description": "— a cognitive training platform I work on in my free time and hope to bring into the world someday."
+    },
+    "contact": {
+      "text": "Say hello at",
+      "email": "hello@poshan.com.np"
+    },
+    "social": {
+      "github": {
+        "text": "GitHub",
+        "url": "https://github.com/poshan0126"
+      },
+      "linkedin": {
+        "text": "LinkedIn",
+        "url": "https://linkedin.com/in/ppandey6"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "A collection of work that has shaped my journey as an engineer and observer. These projects and photographs represent my exploration of AI systems, distributed architectures, and the fleeting moments worth preserving.",
+    "sections": {
+      "projects": "Featured Projects",
+      "photography": "Photography"
+    },
+    "projects": [
+      {
+        "name": "DevSwarm",
+        "url": "https://devswarm.ai/",
+        "type": "HiVE Engineering Platform",
+        "description": "Helped build and ship DevSwarm, a parallel AI coding platform enabling developers to run multiple AI assistants (Claude, Gemini, Amazon Q) concurrently across isolated Git branches. Revolutionized development workflows with HiVE (High Velocity Engineering) approach, cutting feature delivery time from 4-6 hours to under 30 minutes.",
+        "features": [
+          "Parallel multi-agent orchestration across isolated Git worktrees",
+          "Real-time AI assistant comparison and branch-based development",
+          "Integrated Jira and GitHub workflows for seamless task management",
+          "MCP-driven inter-agent communication and error recovery systems"
+        ],
+        "tech": ["TypeScript", "Electron", "Git Worktrees"]
+      },
+      {
+        "name": "TalentAI",
+        "url": "https://github.com/poshan0126/hacknation-2025-talentai-challenge-10",
+        "type": "AI Talent Marketplace",
+        "award": "🏆 Finalist, MIT Sloan HackNation 2025",
+        "description": "Revolutionary AI talent marketplace that matches candidates through debugging challenges rather than traditional interviews. Built with FastAPI, React, and LangGraph to create bias-free, skills-based evaluation using local LLMs and interactive skill visualization.",
+        "features": [
+          "Blind resume processing with AI skill extraction in under 5 seconds",
+          "Interactive bug hunt challenges for performance-based evaluation",
+          "Real-time skill graph visualization and anonymous leaderboards",
+          "Semantic job-candidate matching with 90%+ recruiter satisfaction"
+        ],
+        "tech": ["FastAPI", "React", "Supabase", "LangGraph", "ChromaDB", "Claude", "OpenAI"]
+      },
+      {
+        "name": "ThinkFolio",
+        "url": "https://thinkfolio-seven.vercel.app/auth/login",
+        "type": "RAG Application",
+        "description": "AI-powered research paper interaction platform built with Next.js 15, enabling researchers to upload PDFs and engage in intelligent conversations with academic documents. Features streaming AI chat responses with page-specific citations using RAG architecture and pgvector for semantic understanding.",
+        "features": [
+          "Streaming AI chat with uploaded research papers and real-time responses",
+          "Page-specific citation generation with document context awareness",
+          "Advanced PDF chunking and vector embeddings for semantic search",
+          "Secure user sessions with Supabase authentication and Edge runtime"
+        ],
+        "tech": ["Next.js", "FastAPI", "Redis", "OpenAI", "Supabase", "LangGraph", "Vercel"]
+      }
+    ]
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "subtitle": "A curated collection of thoughts that have shaped my understanding of the world. These words from philosophers, scientists, and thinkers offer perspectives on life, knowledge, and human nature."
+  }
+}
